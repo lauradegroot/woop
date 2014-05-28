@@ -12,7 +12,6 @@ function useQuerySrc(){
 	}
 }
 
-
 function woop(){
 	for (var i=0; i < 20; i++){
 		var image = $('.image img:last-child');
@@ -25,7 +24,6 @@ function woop(){
 }
 
 function getUrlVars(){
-
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
     for(var i = 0; i < hashes.length; i++)
@@ -36,5 +34,3 @@ function getUrlVars(){
     }
     return vars;    
 }
-
-
