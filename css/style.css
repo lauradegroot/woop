@@ -13,5 +13,51 @@ img:first-child {
   width: 100%;
   height: 100%; }
 
-img + img {
-  border-radius: 100%; }
+.animate-odd {
+  -webkit-animation: animate-odd 5s linear infinite;
+  animation: animate-odd 5s linear infinite; }
+
+.animate-even {
+  -webkit-animation: animate-even 5s linear infinite;
+  animation: animate-even 5s linear infinite; }
+
+@-webkit-keyframes animate-odd {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+@keyframes animate-odd {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes animate-even {
+  0% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); }
+
+  100% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); } }
+@keyframes animate-even {
+  0% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); }
+
+  100% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); } }

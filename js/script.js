@@ -12,7 +12,7 @@ function useQuerySrc(){
 	}
 }
 
-function woop(){
+function woop(){	
 	var levels = getUrlVars()["levels"];
 	for (var i=0; i < (levels || 15 ) ; i++){
 		var image = $('.image img:last-child');
@@ -22,6 +22,8 @@ function woop(){
 		var newWidth = (prevWidth / 120) * 100;
 		newImage.css('width', newWidth);
 	}
+	setShape();
+	setAnimate();
 }
 
 function getUrlVars(){
@@ -34,4 +36,24 @@ function getUrlVars(){
         vars[hash[0]] = hash[1];
     }
     return vars;    
+}
+
+function setShape(){
+	var shape = getUrlVars()["shape"];
+	if ( shape === "square" ) {
+		$('.image img:first-child').siblings().css('border-radius','none');
+	} else {
+		$('.image img:first-child').siblings().css('border-radius','100%');
+	}
+}
+
+function setAnimate(){
+	var animate = getUrlVars()["animate"];
+	if ( animate === "yes" ) {
+		$('.image img:nth-child(odd)').addClass('animate-odd');
+		$('.image img:nth-child(even)').addClass('animate-even');
+		$('.image img:first-child').removeClass();
+	} else {
+		$('.image img:nth-child(even)').siblings().removeClass();
+	}
 }
