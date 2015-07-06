@@ -35,7 +35,7 @@ function useQuerySrc(){
 	if (undefined !== imageSrc && imageSrc.length){
 		$('.source:first-child').replaceWith("<img src='"+imageSrc+"' class='source'/>");
 		woop();
-	} else if ( videoSrc === "yes") {
+	} else if ( videoSrc === "true") {
 		$('.source:first-child').replaceWith("<video autoplay class='source'></video>");
 		getVideo();
 	}
@@ -55,7 +55,7 @@ function setShape(){
 
 function setAnimate(){
 	var animate = getUrlVars()["animate"]; // are we animating this baby?
-	if ( animate === "yes" ) {
+	if ( animate === "true" ) {
 		$('.sources .source:nth-child(odd)').addClass('animate-odd'); // odd numbered media sources go clockwise
 		$('.sources .source:nth-child(even)').addClass('animate-even'); // even numbered media sources go counter clockwise
 		$('.source:first-child').removeClass(); // first media source stays put
