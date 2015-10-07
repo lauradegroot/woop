@@ -16,7 +16,7 @@ Query string parameters
 5. video: use video feed from your webcam to populate the shapes
 	ex. video=true
 
-Here's an example using all parameters (except video): http://lauradegroot.github.io/?src=http://i.imgur.com/FzMZpRB.gif&levels=12&shape=square&animate=true
+Here's an example using all parameters (except video): http://lauradegroot.github.io/woop/?src=http://i.imgur.com/FzMZpRB.gif&levels=12&shape=square&animate=true
 
-Here's an example using video: http://lauradegroot.github.io/?video=true&levels=10
+Here's an example using video: http://lauradegroot.github.io/woop/?video=true&levels=10
 
